@@ -1,42 +1,96 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+h1 {
+  color: darkslategrey;
+  font-weight: 700;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  height: 40px;
+  width: 40px;
+  margin-right: 15px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+  color: darkslategray; 
+  background: #a6b9a43d;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: -5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+#placeholder {
+  color: darkslategrey;
+  padding: 15px;
+  background: #a6b9a43d;
+  border-radius: 5px;
 }
 
-.card {
-  padding: 2em;
+#stockForm {
+  color: black;
 }
 
-.read-the-docs {
-  color: #888;
+button {
+  width: 190px;
+  font-weight: bold;
+  color: white;
+  padding: 15px;
+  margin-right: 0px;
+  background-color: #41337A;
+  border-radius: 5px;
+  border-style: none;
+  box-shadow: inset 0 0 0 0 #beff54;
+  transition: ease-out 0.3s;
+  outline: none;
 }
+
+button:hover {
+  box-shadow: inset 190px 0 0 0 #beff54;
+  cursor: pointer;
+  color: black;
+
+}
+
+input {
+  padding: 15px;
+  margin: 10px;
+  margin-left: 0px;
+  border-radius: 5px;
+  border-style: none;
+  
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+ul {
+  padding: 0px;
+}
+
+li {
+  list-style-type: none;
+  margin-bottom: 10px;
+  padding: 20px;
+  background-color: #a6b9a43d;
+  color: darkslategray;
+  line-height: 0.6;
+  border-radius: 7px;
+}
+
+.positive {
+  color: #080;
+}
+
+.negative {
+  color: #f00;
+}
+
