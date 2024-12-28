@@ -1,5 +1,6 @@
 import { useState, createContext, useContext, useCallback, useEffect} from 'react'
 import './App.css'
+import icon from "./assets/vivan logo.svg"
 
 
 const test = true;
@@ -13,9 +14,10 @@ const stockContext = createContext();
 
 function DashboardHeader() {
   return (
-    <>
+    <header>
+      <img src={icon} className="logo" alt="Bar Chart Logo" />
       <h1>Finance Dashboard</h1>
-    </>
+    </header>
   )
 }
 
@@ -103,12 +105,12 @@ function StockForm() {
   };
 
   return (
-    <>  
+    <div id="stockForm">  
       <input type="text" placeholder="Stock Symbol" value={stockSymbol} onChange={event=> setStockSymbol(event.target.value)}></input>
       <input type="number" placeholder="Quantity" value={stockQuantity} onChange={event=> setStockQuantity(event.target.value)}></input>
       <input type="number" placeholder="Price" value={stockPurchasePrice}  onChange={event=> setStockPurchasePrice(event.target.value)}></input>
-      <button type="submit" onClick={addStock} variant="contained">Add Stock</button>
-    </>
+      <button type="submit" onClick={addStock} variant="contained">ADD STOCK</button>
+    </div>
   )
 }
 
